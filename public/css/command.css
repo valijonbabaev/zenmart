@@ -10,3 +10,427 @@ a {
 p {
     margin: 0;
 }
+
+/* CONTAINER */
+.container{
+    position: relative;
+    width: 1320px;
+    height: auto;
+    display: flex;
+}
+
+/* NAVBAR */
+
+.navbar_frame{
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-color: rgba(68, 50, 151, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navbar_frame .container{
+    padding: 20px 0 14px;
+    flex-direction: column;
+    
+}
+.navbar_frame .container .navbar_top{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.navbar_frame .navbar_top .nav_search_frame{
+    width: 651px;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 1);
+}
+.navbar_frame .nav_search_frame .search_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 17px;
+}
+.navbar_frame .category_list select{
+    width: 140px; 
+    height: 30px;
+    border: none;
+    outline: none;
+    color: rgba(98, 105, 116, 1);
+    font-family: "Jost";
+    font-style: Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.navbar_frame .search_box .category_list{
+    /* categories */
+    width: 166px; 
+    height: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 1);
+}
+.navbar_frame .search_box input{
+    /* Search products… */
+    margin-left: 12px;
+    width: 387px;
+    height: 22px;
+    border: none;
+    outline: none;
+    color: rgba(98, 105, 116, 1);
+    font-family: "Jost";
+    font-style: Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.navbar_frame .nav_search_frame .search_icon_box{
+    /* Rectangle 4 */
+    width: 49.81px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 6px 6px 0px;
+    background: rgba(245, 195, 75, 1);
+}
+.navbar_frame .navbar_top .nav_top_menu{
+    /* right-box */
+    
+    width: 416.87px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar_frame .nav_top_menu .top_menu_box{
+    display: flex;
+    flex-direction: row;
+}
+.navbar_frame .top_menu_box .box_icon_box{
+    /* Rectangle 5 */
+    position: relative;
+    width: 54px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_frame .box_icon_box img{
+    width: 22px;
+    height: 22px;
+
+}
+.navbar_frame .top_menu_box .box_info_box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    justify-content: flex-end;
+}
+.navbar_frame .box_info_box span{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Jost";
+    font-style: Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.navbar_frame .box_info_box strong{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Jost";
+    font-style: Regular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.navbar_frame .box_icon_box .basket_count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(245, 195, 75, 1);
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost";
+    font-style: Bold;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+.navbar_frame .container .navbar_bott{
+    border-top: 1px solid #5747a2;
+    margin-top: 20px;
+
+}
+.navbar_frame .navbar_bott .navbat_bott_menu_box{
+    margin-top: 10px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar_frame .navbar_bott .browse_box{
+    width: 185px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 1px solid #5747a2;
+}
+.navbar_frame .browse_box immg{
+    width: 20px;
+    height: 18px;
+}
+.navbar_frame .browse_box span{
+    color: rgba(255, 255, 255, 1);
+    margin-left: 10px;
+    font-family: "Jost";
+    font-style: Medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.navbar_frame .navbat_bott_menu_box .navbar_route_menu{
+    width: 670px;
+    display: flex;
+    flex-direction: row;
+}
+.navbar_frame .navbar_route_menu a{
+    font-family: "Jost";
+    font-style: Medium;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 10px;
+}
+.navbar_frame .navbar_route_menu a.title{
+    color: #f5c34b;
+}
+.navbar_frame .sorting_menu span{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Jost";
+    font-style: Medium;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+/* HEADER FRAME */
+.homepage{
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header_frame{
+    position: relative;
+    margin-top: 47px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.header_frame .container{
+    flex-direction: row;
+    height: 200px;
+}
+.header_frame .container .header_left{
+    position: relative;
+    width: 871px;
+    height: 508px;
+    border-radius: 5px;
+
+    background-image: url(../images/icons/header_bg.svg);
+background-color: rgba(0, 83, 246, 1);
+}
+.header_frame .header_left .header_content{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.header_frame .header_content div{
+    width: 104px;
+    height: 30px;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(245, 195, 75, 1);
+
+    gap: 10px;
+padding: 4px 14px 4px 14px;
+
+border-radius: 6px;
+font-family: "Jost";
+font-style: Medium;
+font-size: 13px;
+font-weight: 500;
+line-height: 22px;
+}
+
+.header_frame .header_content span{
+    /* Immersive Entertainment */
+    margin-top: 10px;
+width: 428px;
+height: 152px;
+ 
+
+color: rgba(255, 255, 255, 1);
+
+font-family: "Jost";
+font-style: normal;
+font-size: 60px;
+font-weight: 500;
+line-height: 87px;
+color: #FFFFFF
+}
+
+.header_frame .header_content p{
+    margin-top: 10px;
+    width: 262;
+    height: 56;
+
+    color: rgba(255, 255, 255, 1);
+
+font-family: "Jost";
+font-style: Medium;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.header_frame .header_content a{
+    margin-top: 20px;
+   
+   
+width: 140px;
+height: 52px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* gap: 10px;
+padding: 15px 35px 15px 35px; */
+/* 
+border: 1px solid rgba(255, 255, 255, 1); */
+border-radius: 6px;
+background: rgba(255, 255, 255, 1);
+
+color: rgba(4, 30, 66, 1);
+}
+
+.header_frame .header_content img{
+    position: absolute;
+    /* image 12 */
+width: 520px;
+height: 407px;
+right: 10px;
+}
+
+.header_frame .container .header_right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-left: 20px;
+
+}
+.header_frame .header_right .header_box{
+    /* Rectangle 56 */
+width: 422px;
+height: 240px;
+display: flex;
+flex-direction: row;
+background: rgba(242, 242, 242, 1);
+border-radius: 5px;
+}
+.header_frame .header_box .box_left{
+    margin-left: 30px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+}
+
+
+.header_frame .box_left span{
+    color: rgba(0, 83, 246, 1);
+
+font-family: "Jost";
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+
+}
+
+.header_frame .box_left p{
+    margin: 10px 0;
+    color: rgba(4, 30, 66, 1);
+
+font-family: "Jost";
+font-style: normal;
+font-size: 26px;
+font-weight: 500;
+line-height: 38px;
+
+}
+
+.header_frame .box_left a{
+color: rgba(4, 30, 66, 1);
+
+font-family: "Jost";
+font-style: Medium;
+font-size: 15px;
+font-weight: 500;
+line-height: 22px;
+}
+
+.header_frame .box_left .hover_border{
+margin-top: 3px;
+width: 32px;
+height: 2px;
+background: rgba(4, 30, 66, 1);
+}
+
+.header_frame .header_box .box_right{
+    width: 50%;
+}
+
+.header_frame .box_right img{
+    width: 100%;
+    height: 100%;
+}
